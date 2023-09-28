@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "aeonik";
+  src: url("../fonts/aeonik-regular-webfont.woff");
+}
+
+/* 
+    navbar-nav > li > a 
+    navbar-nav > li > a:hover 
+  */
+
+.nav-menu-class {
+  @apply font-bold block relative mx-0 my-[0.2rem] px-0 py-[0.6rem] hover:opacity-70 border-b-2 border-gray-200;
+}
+
+/* Nav Bar Toggles */
+.sub-menu {
+  @apply hidden;
+  background-color: #f9f9f9;
+}
+.navbar-collapse {
+  @apply hidden;
+}
+
+.sub-menu-cl-h4 {
+  @apply font-bold px-0 py-2;
+}
+
+/*
+    .sub-menu ul li 
+  */
+.sub-menu-cl-ul-li {
+  @apply capitalize  mx-0 my-[0.2rem] px-0 py-[0.2rem];
+}
+
+/* 
+    .sub-menu ul li a
+    .sub-menu ul li a:hover
+  */
+.sub-menu-cl-ul-li-a {
+  @apply ml-5 transition-all duration-[0.5s] ease-[ease] hover:underline;
+}
+
+.navbar {
+  background: #fff;
+  padding: 2 0.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  /* visibility: hidden; */
+}
+
+.navbar-nav > li {
+  margin-left: 20px;
+}
+
+.logo-container {
+  max-width: 200px;
+  width: auto;
+  height: auto;
+}
+
+.btn-remove {
+  visibility: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .sub-menu {
+    display: hidden;
+  }
+
+  .sub-menu-expanded {
+    display: flex;
+    flex: row;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .logo-container {
+    width: auto;
+    height: auto;
+  }
+  .navbar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 5rem;
+    position: relative;
+  }
+  .navbar-toggler {
+    display: none;
+  }
+
+  .brand-and-icon {
+    flex: 0 0 100px;
+    border-bottom: none;
+    padding: 0;
+  }
+  .navbar-collapse {
+    display: block !important;
+    overflow-y: hidden;
+    flex: 1 0 auto;
+  }
+
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  .navbar-nav > li > a {
+    border-bottom: none;
+    margin: 0 0.4rem;
+    padding: 1.7rem 1.4rem 1.7rem 0rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  .sub-menu {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 100%;
+    background: #f9f9f9;
+  }
+
+  .navbar-nav > li:hover .sub-menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .sub-menu-item {
+    flex: 0 0 calc(25% - 1rem);
+    margin-right: 1rem;
+  }
+
+  .sub-menu-cl-ul-li-a {
+    margin-left: 0;
+  }
+
+  .navbar-nav > li {
+    margin-left: 0px;
+  }
+
+  .btn-remove {
+    visibility: visible;
+  }
+}

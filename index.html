@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trendspek Technical Test</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="input.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <!-- START -->
+  <body
+    class="flex flex-col min-h-screen antialiased relative font-aeonik text-secondary"
+  >
+    <div class="main-wrapper block">
+      <!-- Nav Bar -->
+
+      <nav class="navbar">
+        <!-- Logo and Hamburger -->
+        <div class="flex justify-between py-3 px-5 mx-0 brand-and-icon">
+          <div class="logo-container">
+            <img
+              src="used-images/trendspek.svg"
+              alt="Trendspek Logo"
+              class="logo-container"
+            />
+          </div>
+          <button
+            type="button"
+            class="block bg-transparent text-3xl cursor-pointer py-0 px-5 transition-opacity duration-400 ease-in border-none rounded-lg hover:opacity-70 navbar-toggler"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- Nav Bar Toggles -->
+        <!-- large screen: hover | smaller screen: click -->
+        <div class="overflow-y-scroll navbar-collapse">
+          <!-- Menu Link -->
+          <ul class="navbar-nav">
+            <li
+              class="mid-lg:border-b-4 mid-lg:border-transparent mid lg:hover:border-b-primary"
+            >
+              <a href="#" class="nav-menu-class menu-link">Home</a>
+            </li>
+
+            <li
+              class="mid-lg:border-b-4 mid-lg:border-transparent mid lg:hover:border-b-primary"
+            >
+              <a href="https://trendspek.com/" class="nav-menu-class menu-link"
+                >What we do</a
+              >
+            </li>
+
+            <li
+              class="mid-lg:border-b-4 mid-lg:border-transparent mid lg:hover:border-b-primary"
+            >
+              <a class="nav-menu-class menu-link">
+                Products
+                <span
+                  class="absolute -translate-y-2/4 right-2.5 top-2/4 drop-icon"
+                >
+                  <i class="fas fa-chevron-down"></i>
+                </span>
+              </a>
+              <div class="sub-menu border-b-2 border-gray-300 shadow-md p-2">
+                <!-- item 1 -->
+                <!-- PHOTO CARD-->
+                <div class="flex flex-col bg-secondary px-4 py-4 sub-menu-item">
+                  <div class="flex justify-center lg:justify-start">
+                    <img
+                      src="used-images/picSaNav.png"
+                      alt="Image of someone working"
+                      class="w-lg h-lg"
+                    />
+                  </div>
+
+                  <h2 class="text-2xl font-bold text-primary text-left pt-3">
+                    Better. From every angle.
+                  </h2>
+
+                  <button
+                    type="button"
+                    class="bg-primary rounded px-2 py-1 my-3 hover:opacity-70 self-start"
+                  >
+                    <span
+                      class="text-white uppercase text-sm font-bold cursor-pointer"
+                    >
+                      See Trendspek in Action
+                    </span>
+                  </button>
+                </div>
+
+                <!-- end of item 1-->
+                <!-- item 2 -->
+                <div class="sub-menu-item pl-2 pt-4">
+                  <h4 class="sub-menu-cl-h4">Our Angle</h4>
+                  <ul>
+                    <li class="sub-menu-cl-ul-li">
+                      <a
+                        href="https://trendspek.com/"
+                        class="sub-menu-cl-ul-li-a"
+                        >asset Intelligence Software</a
+                      >
+                    </li>
+                    <li class="sub-menu-cl-ul-li">
+                      <a
+                        href="https://trendspek.com/"
+                        class="sub-menu-cl-ul-li-a"
+                        >Precision Reality Twins</a
+                      >
+                    </li>
+                    <li class="sub-menu-cl-ul-li">
+                      <a
+                        href="https://trendspek.com/"
+                        class="sub-menu-cl-ul-li-a"
+                        >ESG</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- end of item 2 -->
+                <!-- item 3 -->
+                <div class="sub-menu-item pl-2 pt-4">
+                  <h4 class="sub-menu-cl-h4">Industries</h4>
+                  <ul>
+                    <li class="sub-menu-cl-ul-li" class="sub-menu-cl-ul-li">
+                      <a
+                        href="https://trendspek.com/"
+                        class="sub-menu-cl-ul-li-a"
+                        >Property & Commercial</a
+                      >
+                    </li>
+                    <li class="sub-menu-cl-ul-li">
+                      <a
+                        href="https://trendspek.com/"
+                        class="sub-menu-cl-ul-li-a"
+                        >Water, Reservoirs & Dams</a
+                      >
+                    </li>
+                    <li class="sub-menu-cl-ul-li">
+                      <a
+                        href="https://trendspek.com/"
+                        class="sub-menu-cl-ul-li-a"
+                        >Oil, Energy & Gas</a
+                      >
+                    </li>
+                    <li class="sub-menu-cl-ul-li">
+                      <a
+                        href="https://trendspek.com/"
+                        class="sub-menu-cl-ul-li-a"
+                        >Ports & Maritime</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- end of item 3 -->
+                <!-- item 4 -->
+                <div class="sub-menu-item pl-2 pt-4">
+                  <h4 class="sub-menu-cl-h4">Product</h4>
+                  <ul>
+                    <li class="sub-menu-cl-ul-li">
+                      <a
+                        href="https://trendspek.com/"
+                        class="sub-menu-cl-ul-li-a"
+                        >Analysis Tools</a
+                      >
+                    </li>
+                    <li class="sub-menu-cl-ul-li">
+                      <a
+                        href="https://trendspek.com/"
+                        class="sub-menu-cl-ul-li-a"
+                        >Image Picking</a
+                      >
+                    </li>
+                    <li class="sub-menu-cl-ul-li">
+                      <a
+                        href="https://trendspek.com/"
+                        class="sub-menu-cl-ul-li-a"
+                        >Side-by-side Comparisons</a
+                      >
+                    </li>
+                    <li class="sub-menu-cl-ul-li">
+                      <a
+                        href="https://trendspek.com/"
+                        class="sub-menu-cl-ul-li-a"
+                        >Roof Deflection</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- end of item 4 -->
+              </div>
+            </li>
+
+            <li
+              class="mid-lg:border-b-4 mid-lg:border-transparent mid lg:hover:border-b-primary"
+            >
+              <a href="https://trendspek.com/" class="nav-menu-class menu-link"
+                >Solutions</a
+              >
+            </li>
+
+            <li
+              class="mid-lg:border-b-4 mid-lg:border-transparent mid lg:hover:border-b-primary"
+            >
+              <a href="https://trendspek.com/" class="nav-menu-class menu-link"
+                >Partners</a
+              >
+            </li>
+
+            <li
+              class="mid-lg:border-b-4 mid-lg:border-transparent mid lg:hover:border-b-primary"
+            >
+              <a href="https://trendspek.com/" class="nav-menu-class menu-link"
+                >Case Studies</a
+              >
+            </li>
+
+            <li
+              class="mid-lg:border-b-4 mid-lg:border-transparent mid lg:hover:border-b-primary"
+            >
+              <a href="https://trendspek.com/" class="nav-menu-class menu-link"
+                >News</a
+              >
+            </li>
+
+            <li
+              class="mid-lg:border-b-4 mid-lg:border-transparent mid lg:hover:border-b-primary"
+            >
+              <a href="https://trendspek.com/" class="nav-menu-class menu-link"
+                >About us</a
+              >
+            </li>
+            <!-- Request a Demo Button -->
+            <li class="lg:border-b-4 lg:border-transparent">
+              <button
+                type="button"
+                class="linkToExplorer btn-remove bg-primary px-2 py-2 text-xs rounded text-white lg:bottom-0 uppercase hover:opacity-70"
+              >
+                <div
+                  class="text-white text-sm font-bold font-['Open Sans'] leading-none"
+                >
+                  Request a demo
+                </div>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Box 1 -->
+    <!-- Big Banner -->
+
+    <main class="hero lg:max-h-screen pt-5 md:pt-[56px] mid-lg:pt-[0]">
+      <div class="flex flex-col items-center bg-stone-50 gap-y-8 lg:gap-12">
+        <!-- Precision Asset Intelligence -->
+        <div
+          class="flex flex-col pt-20 mx-6 md:pt-8 gap-5 md:gap-0 md:mr-0 lg:gap-4 lg:pt-10"
+        >
+          <h1
+            class="text-center text-6xl md:text-5xl lg:text-5xl font-bold text-primary md:text-stone-800"
+          >
+            Precision Asset Intelligence
+          </h1>
+          <!-- Capture | Inspect | Maintain -->
+          <p
+            class="text-center text-2xl font-extrabold text-zinc-700 md:text-lg lg:text-2xl"
+          >
+            Capture | Inspect | Maintain
+          </p>
+        </div>
+
+        <!-- left banner -->
+        <div
+          class="flex flex-col md:flex-row md:justify-end md:gap-0 md:m-0 md:items-end lg:items-center lg:pl-36 lg:gap-6"
+        >
+          <div
+            class="flex flex-col md:justify-evenly grow-0 mx-4 gap-3 md:gap-5 lg:mr-0 lg:gap-4"
+          >
+            <h4
+              class="text-lg font-bold text-center md:text-justify md:text-xl lg:xl 2xl:text-2xl text-secondary"
+            >
+              Inspect any asset with cutting-edge drone technology
+            </h4>
+            <p
+              class="text-base text-zinc-700 leading-relaxed px-4 text-justify md:text-lg md:leading-tight md:px-0 lg:leading-normal lg:text-justify"
+            >
+              Access unparalleled visibility of all of your assets using
+              Precision Asset Intelligence. Inspections can take place off site
+              and are recorded for posterity.
+              <span class="md:block"></span> Have clarity of vision from the
+              drawing room to the board room. With repeated inspections, you can
+              track the evolution of your assets.
+            </p>
+            <div
+              class="flex flex-row justify-center md:justify-start lg:justify-start md:pl-0 space-x-5 cursor-pointer"
+            >
+              <button
+                class="linkToExplorer inline-flex h-8 w-40 items-center justify-center gap-2.5 rounded bg-primary px-4 hover:opacity-70"
+              >
+                <div
+                  class="text-sm font-extrabold uppercase leading-none text-white"
+                >
+                  See Pricing
+                </div>
+              </button>
+              <button
+                class="inline-flex h-8 w-40 items-center justify-center gap-2.5 rounded px-4 border border-zinc-700 hover:opacity-70"
+              >
+                <div
+                  class="text-xs font-bold uppercase leading-none text-zinc-700"
+                >
+                  Try Trendspek
+                </div>
+              </button>
+            </div>
+          </div>
+          <!-- Big Banner Image   -->
+          <div class="grow">
+            <img src="used-images/hero.png" alt="Main image" class="h-auto" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Box 2 -->
+    <!-- Logos -->
+
+    <section class="bg-white h-fit">
+      <div class="px-8 py-[70px] flex flex-col gap-8 lg:gap-12 justify-center">
+        <h1
+          class="text-secondary text-center font-bold text-xl lg:text-2xl 2xl:text-4xl"
+        >
+          Trusted by industry leaders
+        </h1>
+        <div class="flex flex-row flex-wrap justify-evenly items-center gap-5">
+          <div>
+            <img
+              src="used-images/infracorr-logo.png"
+              alt="Infracorr Logo"
+              class="max-w-[200px] h-auto"
+            />
+          </div>
+          <div>
+            <img
+              src="used-images/national-grid-logo.png"
+              alt="National Grid Logo"
+              class="max-w-[200px] h-auto"
+            />
+          </div>
+          <div>
+            <img
+              src="used-images/pgim-logo.png"
+              alt="PGIM logo"
+              class="max-w-[200px] h-auto"
+            />
+          </div>
+          <div>
+            <img
+              src="used-images/wga-logo.png"
+              alt="WGA Logo"
+              class="max-w-[200px] h-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Box 3 -->
+    <!-- Stats -->
+
+    <section class="bg-stone-800 h-fit">
+      <div
+        class="flex flex-col sm:flex-row flex-wrap md:flex-nowrap justify-evenly items-center content-center w-full md:h-60 text-white px-10 py-10 text-lg md:text-xl lg:text-2xl xl:text-4xl lg:justify-between gap-10 font-bold"
+      >
+        <h4 class="text-center flex-grow">
+          Trusted by<span class="block text-primary">2000 leaders</span>
+        </h4>
+        <h4 class="text-center flex-grow">
+          80%<span class="block text-primary">faster</span>
+        </h4>
+        <h4 class="text-center flex-grow">
+          60%<span class="block text-primary">cost saving</span>
+        </h4>
+
+        <h4 class="text-center flex-grow">
+          Used<span class="block text-primary">MX Coordinates</span>
+        </h4>
+        <h4 class="text-center flex-grow">
+          Voluptas<span class="block text-primary">sit aspernatur</span>
+        </h4>
+      </div>
+    </section>
+
+    <!-- Box 4 -->
+    <!-- Content -->
+
+    <section class="bg-white">
+      <!-- content container -->
+      <div
+        class="flex flex-col m-16 md:m-20 lg:mx-60 lg:my-32 min-h-fit gap-10 lg:gap-28"
+      >
+        <!-- content 1 container -->
+        <div class="flex flex-col gap-20">
+          <div
+            class="flex flex-col items-center md:items-start md:flex-row md:justify-center gap-5 lg:gap-10"
+          >
+            <!-- content 1 pic  -->
+            <div
+              class="flex-grow bg-zinc-300 w-80 h-72 md:h-80 lg:h-96 md:max-w-1/2 md:max-h-full"
+            ></div>
+
+            <!-- content 1 texts -->
+            <div
+              class="flex flex-col gap-2 w-full h-auto md:w-1/2 md:max-h-fit lg:min-w-1/2 lg:min-h-full lg:gap-10"
+            >
+              <h4
+                class="text-xl md:text-xl lg:text-3xl text-black text-right md:text-left font-bold leading-none lg:leading-loose"
+              >
+                Capture your asset from every angle
+              </h4>
+              <p class="text-small lg:text-lg text-justify text-black">
+                Reduce risk and avoid dangerous climbs and increase workplace
+                safety by harnessing the latest in drone technology to capture
+                your asset. Drones allow a full 360° capture of an asset,
+                literally providing a birds-eye view.
+                <br /><br />Our cutting-edge annotation tools allow you to
+                measure every crack, calculate the volume of work required, and
+                assess roof deflections.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- content 2 container -->
+        <div
+          class="flex flex-col items-center md:items-start md:flex-row-reverse md:justify-center gap-5 lg:gap-10"
+        >
+          <!-- content 2 pic  -->
+
+          <div
+            class="flex-grow bg-zinc-300 w-80 h-72 md:h-80 lg:h-96 md:max-w-1/2 md:max-h-full"
+          ></div>
+
+          <!-- content 2 texts -->
+          <div
+            class="flex flex-col gap-2 w-full h-auto md:w-1/2 md:max-h-fit lg:min-w-1/2 lg:min-h-full lg:gap-10"
+          >
+            <h4
+              class="text-xl md:text-xl lg:text-3xl text-black text-left md:text-left font-bold leading-none lg:leading-loose"
+            >
+              Track and manage asset maintenance using Trendspek’s collaboration
+              tools
+            </h4>
+            <p class="text-small lg:text-lg text-justify text-black">
+              Trendspek allows you to manage your workforce using our
+              market-leading collaboration tools. Send work orders, provide
+              updates through the application, and have robust full-team
+              discussions from the field.
+              <br /><br />
+              Everything is tracked in Trendspek’s robust annotation system, so
+              you always maintain a full historical record for the full
+              life-cycle of an asset.
+            </p>
+          </div>
+        </div>
+        <!-- content 3 container -->
+        <div class="flex flex-col gap-20">
+          <div
+            class="flex flex-col items-center md:items-start md:flex-row md:justify-center gap-5 lg:gap-10"
+          >
+            <!-- content 3 pic  -->
+
+            <div
+              class="flex-grow bg-zinc-300 w-80 h-72 md:h-80 lg:h-96 md:max-w-1/2 md:max-h-full"
+            ></div>
+
+            <!-- content 3 texts -->
+            <div
+              class="flex flex-col shrink gap-2 w-full h-auto md:w-1/2 md:max-h-fit lg:min-w-1/2 lg:min-h-full lg:gap-10"
+            >
+              <h4
+                class="text-xl md:text-xl lg:text-3xl text-black text-right md:text-left font-bold leading-none lg:leading-loose"
+              >
+                Integrations and AI
+              </h4>
+              <p class="text-small lg:text-lg text-justify text-black">
+                Trendspek allows you to integrate your existing asset management
+                software. Using Maximo? SAP? Trendspek’s fully-featured API and
+                our collaboration with market-leader, Reekoh, allows you to
+                integrate with the most archaic asset management software and
+                still incorporate cutting edge Trendspek software.
+                <br /><br />Artificial Intelligence is also right at your
+                fingertips, with our recent Datature integration allowing AI to
+                assess for cracks and rust right across your structure.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Box5 -->
+    <!-- Security and Compliance -->
+    <section class="relative h-72">
+      <!-- Background Image -->
+      <div
+        class="absolute inset-0 bg-local bg-cover bg-center"
+        style="background-image: url('/used-images/security.jpg')"
+      ></div>
+
+      <!-- Overlay Color -->
+      <div class="absolute inset-0 bg-stone-800 bg-opacity-95"></div>
+
+      <!-- Content -->
+      <div
+        class="absolute inset-0 flex flex-col md:flex-row md:justify-evenly justify-center items-center gap-y-3 text-white"
+      >
+        <h4 class="text-xl md:text-2xl lg:text-5xl xl:text-8xl font-semibold">
+          Security &<span class="lg:block"></span> Compliance
+        </h4>
+        <div class="flex flex-col gap-y-10">
+          <p
+            class="text-xs md:text-base md:max-w-md lg:max-w-lg 2xl:max-w-xl lg:text-lg text-left px-8 md:px-0 leading-relaxed"
+          >
+            Trendspek is the most secure asset management software in the
+            market. Trendspek is certified for ISO27001, ISO9001 and ISO27701.
+            In addition, we have SOC2 Type 1 certification, as well as IRAP. We
+            conduct annual penetration tests to ensure our software is as solid
+            as your concrete assets.
+          </p>
+          <div
+            class="inline-flex self-center md:self-start h-6 w-28 items-center justify-center gap-2.5 rounded px-4 border border-white hover:opacity-70 cursor-pointer"
+          >
+            <button class="linkToDataInfo">
+              <div class="text-xs font-semibold uppercase text-white">
+                Learn More
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Box 6 -->
+    <!-- Booking -->
+    <section class="bg-primary h-fit">
+      <div
+        class="h-36 md:mx-36 flex flex-col justify-center items-center md:flex-row md:justify-evenly lg:items-center gap-y-5"
+      >
+        <!-- Text -->
+        <p
+          class="text-white font-bold text-center text-s md:text-xl lg:text-2xl xl:3xl 2xl:4xl"
+        >
+          Getting started is simple. Request a demo today.
+        </p>
+        <!-- Button -->
+        <button
+          class="linkToExplorer inline-flex h-8 w-40 items-center justify-center gap-2.5 rounded bg-white px-4 hover:opacity-70"
+        >
+          <div class="text-base font-bold uppercase leading-none text-primary">
+            Book a demo
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-800 text-white">
+      <!-- column container -->
+      <div
+        class="container mx-auto py-10 md:py-12 flex flex-row flex-1 flex-wrap justify-evenly items-start md:items-start content-evenly lg:justify-evenly gap-y-5 md:gap-5 lg:gap-10"
+      >
+        <!-- Column 1: Logo and Socials -->
+        <div
+          class="flex flex-col items-center justify-evenly md:items-start gap-5"
+        >
+          <!-- Logo -->
+          <div class="">
+            <img
+              src="used-images/white-logo.png"
+              alt="Trendspek Logo"
+              class="w-64 h-11 max-h-full max-w-full"
+            />
+          </div>
+          <!-- Social Icons -->
+          <div class="flex flex-row gap-5">
+            <a
+              href="https://www.facebook.com/trendspek/"
+              class="text-white hover:text-gray-400"
+            >
+              <i class="fab fa-facebook text-2xl"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCfx8-YFYuI1orQFjNMw7QUA?view_as=subscriber"
+              class="text-white hover:text-gray-400"
+            >
+              <i class="fab fa-youtube text-2xl"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/trendspek/about/"
+              class="text-white hover:text-gray-400"
+            >
+              <i class="fab fa-linkedin text-2xl"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/trendspek/"
+              class="text-white hover:text-gray-400"
+            >
+              <i class="fab fa-instagram text-2xl"></i>
+            </a>
+          </div>
+          <!-- Button -->
+          <div>
+            <button
+              type="button"
+              class="linkToExplorer bg-primary px-2 py-2 text-xs rounded text-white uppercase hover:opacity-70"
+            >
+              <div
+                class="text-white text-sm font-bold font-['Open Sans'] leading-none"
+              >
+                Request a demo
+              </div>
+            </button>
+          </div>
+        </div>
+        <!-- Column 2: Industries-->
+        <div
+          class="flex flex-col items-center justify-evenly sm:items-start gap-3"
+        >
+          <h4 class="text-primary fond-bold text-2xl md:text-3xl lg:text-4xl">
+            Industries
+          </h4>
+          <!-- links -->
+          <div class="flex flex-col gap-1">
+            <a href="https://trendspek.com/" class="hover:underline"
+              >Oil, Gas and Energy</a
+            >
+            <a href="https://trendspek.com/" class="hover:underline"
+              >Water, Reservoirs and Dams</a
+            >
+            <a href="https://trendspek.com/" class="hover:underline"
+              >Property and Commercial</a
+            >
+            <a href="https://trendspek.com/" class="hover:underline"
+              >Ports and Maritime</a
+            >
+            <a href="https://trendspek.com/" class="hover:underline">
+              Bridges</a
+            >
+            <a href="https://trendspek.com/" class="hover:underline"
+              >Education</a
+            >
+            <a href="https://trendspek.com/" class="hover:underline"
+              >Construction</a
+            >
+          </div>
+        </div>
+        <!-- Column 3:  Product -->
+        <div
+          class="flex flex-col items-center justify-evenly sm:items-start gap-3"
+        >
+          <h4
+            class="text-primary fond-bold text-2xl md:text-3xl lg:text-4xl cursor-pointer"
+          >
+            Products
+          </h4>
+          <!-- for -->
+          <div class="flex flex-col gap-1">
+            <a href="https://trendspek.com/" class="hover:underline"
+              >Asset inspection</a
+            >
+            <a href="https://trendspek.com/" class="hover:underline"
+              >Processing</a
+            >
+            <a href="https://trendspek.com/" class="hover:underline"> API</a>
+            <a href="https://trendspek.com/" class="hover:underline"
+              >White labelling</a
+            >
+            <a href="https://trendspek.com/" class="hover:underline">
+              Virtual walkaround</a
+            >
+            <a href="https://trendspek.com/" class="hover:underline"
+              >Security</a
+            >
+            <a href="https://trendspek.com/" class="hover:underline"
+              >Integrations</a
+            >
+            <a href="https://trendspek.com/" class="hover:underline"
+              >Pricing
+            </a>
+          </div>
+        </div>
+        <!-- Column 4 Resources -->
+        <div
+          class="flex flex-col items-center justify-evenly sm:items-start gap-3"
+        >
+          <h4 class="text-primary fond-bold text-2xl md:text-3xl lg:text-4xl">
+            Resources
+          </h4>
+          <!-- for -->
+          <div class="flex flex-col gap-1">
+            <a href="https://trendspek.com/" class="hover:underline"
+              >Help Center</a
+            >
+            <a href="https://trendspek.com/" class="hover:underline"> Blog</a>
+            <a href="https://trendspek.com/" class="hover:underline"> eBooks</a>
+            <a href="https://trendspek.com/" class="hover:underline"
+              >Capture Guide</a
+            >
+            <a href="https://trendspek.com/" class="hover:underline">
+              Policies</a
+            >
+            <a href="https://trendspek.com/" class="hover:underline"
+              >Security</a
+            >
+            <a href="https://trendspek.com/" class="hover:underline"
+              >Legal and Privacy</a
+            >
+          </div>
+        </div>
+        <!-- Column-5 : About us-->
+        <div
+          class="flex flex-col items-center justify-evenly sm:items-start gap-3"
+        >
+          <h4 class="text-primary fond-bold text-2xl md:text-3xl lg:text-4xl">
+            About us
+          </h4>
+          <!-- for -->
+          <div class="flex flex-col gap-1">
+            <a href="https://trendspek.com/" class="hover:underline"
+              >Founding Story</a
+            >
+            <a href="https://trendspek.com/" class="hover:underline">
+              Company mission (POV)</a
+            >
+            <a href="https://trendspek.com/" class="hover:underline"> eBooks</a>
+            <a href="https://trendspek.com/" class="hover:underline"
+              >Capture Sustainability</a
+            >
+            <a href="https://trendspek.com/" class="hover:underline">
+              Careers</a
+            >
+            <a href="https://trendspek.com/" class="hover:underline"
+              >Partners</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- copyright notice container -->
+      <p class="text-center p-8">© 2023 Trendspek Pty Ltd</p>
+    </footer>
+
+    <!-- scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
